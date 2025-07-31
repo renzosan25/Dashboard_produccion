@@ -8,8 +8,6 @@
 - [Dashboard Views](#dashboard-views)
 - [Data Modeling](#data-modeling)
 - [DAX Logic](#dax-logic)
-- [Getting Started](#getting-started)
-- [Publication](#publication)
 - [Disclaimer](#disclaimer)
 - [Author](#author)
 
