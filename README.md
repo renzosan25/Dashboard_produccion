@@ -13,7 +13,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 This Power BI project presents a complete dashboard system for monitoring key production indicators in an industrial setting using simulated and anonymized data.
 
@@ -28,7 +28,7 @@ The model is designed for flexible use across multiple production areas (Process
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 | Table            | Description                                                  |
 |------------------|--------------------------------------------------------------|
@@ -42,7 +42,7 @@ The model is designed for flexible use across multiple production areas (Process
 
 ---
 
-## ⚙️ Technologies
+## Technologies
 
 - Power BI Desktop
 - Power Query (M)
@@ -52,7 +52,7 @@ The model is designed for flexible use across multiple production areas (Process
 
 ---
 
-## 🖼️ Dashboard Views
+## Dashboard Views
 
 ### 📈 Weekly KPIs – Process B
 
@@ -66,7 +66,7 @@ Includes:
 
 ---
 
-## 🧩 Data Modeling
+## Data Modeling
 
 ![Data Model](./screenshots/modelo_relacional_powerbi.png)
 
@@ -78,7 +78,7 @@ Features:
 
 ---
 
-## 📐 DAX Logic
+## DAX Logic
 
 Main measures are documented in [`DAX_Medidas.md`](./DAX_Medidas.md), including:
 
@@ -92,14 +92,14 @@ Each measure is structured and commented for clarity.
 ---
 ---
 
-## 🔐 Disclaimer
+## Disclaimer
 
 All data has been **fully anonymized and simulated**. Client names, operator IDs, and process labels were replaced to protect confidentiality.  
 This project is for educational and professional portfolio use only.
 
 ---
 
-## 👤 Author
+## Author
 
 **Renzo Gabriel Sánchez Quispe**  
 📍 Lima, Perú  
