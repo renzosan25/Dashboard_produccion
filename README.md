@@ -1,82 +1,126 @@
-# Dashboard de Producción y Control Operativo
+# 🔧 Industrial Production KPIs Dashboard (Power BI)
 
-Este repositorio contiene dos dashboards construidos en Power BI, orientados al monitoreo de KPIs operativos en entornos industriales reales bajo procesos make-to-order (MTO).
+## 📋 Table of Contents
 
-Los dashboards se basan en datos simulados y anonimizados, y fueron desarrollados como parte de un sistema de mejora continua en una planta de producción textil.
+- [Overview](#overview)
+- [Dataset Description](#dataset-description)
+- [Technologies](#technologies)
+- [Dashboard Views](#dashboard-views)
+- [Data Modeling](#data-modeling)
+- [DAX Logic](#dax-logic)
+- [Getting Started](#getting-started)
+- [Publication](#publication)
+- [Disclaimer](#disclaimer)
+- [Author](#author)
 
 ---
 
-## 🧠 Objetivos del proyecto
+## 🧠 Overview
 
-- Monitorear la **eficiencia diaria** por operario y por turno
-- Visualizar la **producción vs. capacidad instalada** por proceso
-- Analizar causas de ineficiencia mediante **gráfico de Pareto**
-- Evaluar la **utilización de capacidad** de cada área
-- Controlar el **cumplimiento de metas operativas** en tiempo real
+This Power BI project presents a complete dashboard system for monitoring key production indicators in an industrial setting using simulated and anonymized data.
+
+The goal is to:
+- Track production vs. installed capacity by process
+- Monitor operator efficiency over time
+- Evaluate process capacity utilization
+- Visualize Pareto of inefficiencies
+- Control theoretical vs. actual goal achievement
+
+The model is designed for flexible use across multiple production areas (Processes A–F), and leverages strong DAX logic for accurate calculations and insight generation.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 📊 Dataset Description
+
+| Table            | Description                                                  |
+|------------------|--------------------------------------------------------------|
+| proceso_a – f    | Production data for each process (article, client, metrics)  |
+| capacidad_*      | Theoretical process capacities by day and group              |
+| BD_Paretto       | Inefficiency causes and frequencies                          |
+| Calendar         | Standard calendar table with day, month, and year            |
+| Turnos           | Shift information                                            |
+
+📁 All data used is simulated and anonymized. See `/data_produccion` for details.
+
+---
+
+## ⚙️ Technologies
 
 - Power BI Desktop
-- DAX para medidas personalizadas
-- Modelo de datos relacional con múltiples tablas
-- Excel como fuente de datos (anonimizada)
+- Power Query (M)
+- DAX
+- Excel (as data source)
+- GitHub (for version control and documentation)
 
 ---
 
-## 📁 Estructura del repositorio
+## 🖼️ Dashboard Views
 
-powerbi-kpis-produccion/
-├── Dashboard_de_Producción.pbix # Dashboard principal de eficiencia y capacidad
-├── Dashboard_control_salidas.pbix # Dashboard de seguimiento de entregas y cumplimiento
-├── DAX_Medidas.md # Archivo con fórmulas DAX explicadas
-├── README.md # Documento actual
-│
-├── data_produccion/ # Archivos de datos anonimizados
-│ └── *.xlsx #Varios archivos .xlsx como fuente de datos
-│
-└── screenshots/ # Vistas de ejemplo del dashboard
-├── dashboard_kpi_semanal.png
-└── modelo_relacional_powerbi.png
-
-
----
-
-## Vistas del Dashboard
-
-### Indicador semanal de eficiencia
+### 📈 Weekly KPIs – Process B
 
 ![Dashboard KPIs](./screenshots/dashboard_kpi_semanal.png)
 
-### Modelo relacional en Power BI
-
-![Modelo Relacional](./screenshots/modelo_relacional_powerbi.png)
-
----
-
-## 📘 Medidas DAX personalizadas
-
-Se documentaron las principales medidas desarrolladas en el archivo [`DAX_Medidas.md`](./DAX_Medidas.md), incluyendo:
-
-- Eficiencia por proceso
-- Utilización de capacidad
-- Frecuencia acumulada (Pareto)
-- Cálculo de capacidad estimada
+Includes:
+- Production vs. Capacity bar chart
+- Daily efficiency vs. target line chart
+- Pareto of inefficiency causes
+- Operator-wise efficiency table
 
 ---
 
-## 🔐 Nota sobre los datos
+## 🧩 Data Modeling
 
-Todos los datos utilizados han sido **anonimizados**. Los nombres de clientes, operarios y procesos han sido reemplazados por alias.  
-Este proyecto es de carácter demostrativo, con fines de portafolio profesional.
+![Data Model](./screenshots/modelo_relacional_powerbi.png)
+
+Features:
+- Central `Calendar` table
+- One-to-many relationships between processes and dimensions
+- Centralized `Medidas` table for DAX measures
+- Clean relational integrity and filter context design
 
 ---
 
-## 🙌 Autor
+## 📐 DAX Logic
 
-**Renzo Sánchez**  
-[GitHub](https://github.com/renzosan25)  
+Main measures are documented in [`DAX_Medidas.md`](./DAX_Medidas.md), including:
+
+- Efficiency per process
+- Capacity estimation based on minutaje
+- Pareto frequency accumulation
+- Capacity utilization across days
+
+Each measure is structured and commented for clarity.
+
+---
+
+## ▶️ Getting Started
+
+1. Clone this repository
+2. Open `.pbix` files in Power BI Desktop
+3. Keep `/data_produccion/` folder at the same level as the `.pbix` file
+4. Refresh if needed (data is embedded, no external updates required)
+
+---
+
+## 🌐 Publication
+
+Due to organizational account restrictions, the report is **not currently published to Power BI Public**.  
+If enabled, the link will be added in [`link_dashboard_public.txt`](./link_dashboard_public.txt).
+
+---
+
+## 🔐 Disclaimer
+
+All data has been **fully anonymized and simulated**. Client names, operator IDs, and process labels were replaced to protect confidentiality.  
+This project is for educational and professional portfolio use only.
+
+---
+
+## 👤 Author
+
+**Renzo Gabriel Sánchez Quispe**  
 📍 Lima, Perú  
+📫 renzosanchez201@gmail.com  
+🔗 [GitHub Profile](https://github.com/renzosan25)
 
-
+---
