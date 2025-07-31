@@ -1,6 +1,7 @@
 # Medidas DAX Personalizadas
 
-Este repositorio contiene un conjunto de medidas DAX desarrolladas para analizar eficiencia, capacidad, utilización y frecuencia acumulada en distintos procesos productivos. Cada medida está documentada con su objetivo, lógica y fórmula.
+Este documento contiene las principales medidas DAX desarrolladas para el análisis operativo de producción, eficiencia y control de capacidad en distintos procesos industriales.
+
 
 ---
 
