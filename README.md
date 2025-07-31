@@ -92,21 +92,6 @@ Main measures are documented in [`DAX_Medidas.md`](./DAX_Medidas.md), including:
 Each measure is structured and commented for clarity.
 
 ---
-
-## ▶️ Getting Started
-
-1. Clone this repository
-2. Open `.pbix` files in Power BI Desktop
-3. Keep `/data_produccion/` folder at the same level as the `.pbix` file
-4. Refresh if needed (data is embedded, no external updates required)
-
----
-
-## 🌐 Publication
-
-Due to organizational account restrictions, the report is **not currently published to Power BI Public**.  
-If enabled, the link will be added in [`link_dashboard_public.txt`](./link_dashboard_public.txt).
-
 ---
 
 ## 🔐 Disclaimer
