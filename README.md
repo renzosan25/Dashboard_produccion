@@ -10,7 +10,7 @@
 - [DAX Logic](#dax-logic)
 - [Disclaimer](#disclaimer)
 - [Author](#author)
-- [Additional Example](#additional-example-daily-control-dashboard)
+- [Additional Example](#additional-example---daily-control-dashboard)
 
 ---
 
@@ -108,7 +108,7 @@ This project is for educational and professional portfolio use only.
 
 ---
 
-## Additional Example–Daily Control Dashboard
+## Additional Example - Daily Control Dashboard
 
 As a complementary example, the following dashboard illustrates a simplified daily production control panel using flat structured data and simpler DAX logic.
 
