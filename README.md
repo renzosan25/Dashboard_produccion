@@ -1,6 +1,6 @@
-# 🔧 Industrial Production KPIs Dashboard (Power BI)
+# Industrial Production KPIs Dashboard (Power BI)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Dataset Description](#dataset-description)
@@ -38,7 +38,7 @@ The model is designed for flexible use across multiple production areas (Process
 | Calendar         | Standard calendar table with day, month, and year            |
 | Turnos           | Shift information                                            |
 
-📁 All data used is simulated and anonymized. See `/data_produccion` for details.
+All data used is simulated and anonymized. See `/data_produccion` for details.
 
 ---
 
@@ -54,7 +54,7 @@ The model is designed for flexible use across multiple production areas (Process
 
 ## Dashboard Views
 
-### 📈 Weekly KPIs – Process B
+### Weekly KPIs – Process B
 
 ![Dashboard KPIs](./screenshots/dashboard_kpi_semanal.png)
 
