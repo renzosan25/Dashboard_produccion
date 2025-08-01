@@ -10,12 +10,13 @@
 - [DAX Logic](#dax-logic)
 - [Disclaimer](#disclaimer)
 - [Author](#author)
+- [Additional Example](#additional-example---daily-control-dashboard)
 
 ---
 
 ## Overview
 
-This Power BI project presents a complete dashboard system for monitoring key production indicators in an industrial setting using simulated and anonymized data.
+This Power BI project presents a complete dashboard system for monitoring key production indicators in an industrial environment using simulated and anonymized data.
 
 The goal is to:
 - Track production vs. installed capacity by process
@@ -24,7 +25,8 @@ The goal is to:
 - Visualize Pareto of inefficiencies
 - Control theoretical vs. actual goal achievement
 
-The model is designed for flexible use across multiple production areas (Processes A–F), and leverages strong DAX logic for accurate calculations and insight generation.
+🔗 **Main Dashboard:**  
+[▶️ Weekly KPIs – Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMzAxMjAyYzctMGM5My00NDk3LTg4NjAtN2I4ZmE4MDgwZjZkIiwidCI6IjdmMDBjMGNjLTE3NzgtNDBlOS1iMTAzLWU2N2Q1MGE0NWMwZSJ9)
 
 ---
 
@@ -54,15 +56,16 @@ All data used is simulated and anonymized. See `/data_produccion` for details.
 
 ## Dashboard Views
 
-### Weekly KPIs – Process B
+### Weekly KPIs – Process B  
+[▶️ View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMzAxMjAyYzctMGM5My00NDk3LTg4NjAtN2I4ZmE4MDgwZjZkIiwidCI6IjdmMDBjMGNjLTE3NzgtNDBlOS1iMTAzLWU2N2Q1MGE0NWMwZSJ9)
 
-![Dashboard KPIs](./screenshots/dashboard_kpi_semanal.png)
+![Weekly KPI](./screenshots/dashboard_kpi_semanal.png)
 
 Includes:
-- Production vs. Capacity bar chart
-- Daily efficiency vs. target line chart
-- Pareto of inefficiency causes
-- Operator-wise efficiency table
+- Production vs. Capacity analysis
+- Daily efficiency vs. theoretical targets
+- Operator-wise performance
+- Pareto chart of inefficiency causes
 
 ---
 
@@ -70,31 +73,28 @@ Includes:
 
 ![Data Model](./screenshots/modelo_relacional_powerbi.png)
 
-Features:
-- Central `Calendar` table
-- One-to-many relationships between processes and dimensions
-- Centralized `Medidas` table for DAX measures
-- Clean relational integrity and filter context design
+- Central `Calendar` table  
+- One-to-many relationships across dimensions  
+- Centralized `Medidas` table for DAX measures  
+- Clean relational integrity and filter context  
 
 ---
 
 ## DAX Logic
 
-Main measures are documented in [`DAX_Medidas.md`](./DAX_Medidas.md), including:
+Documented in [`DAX_Medidas.md`](./DAX_Medidas.md), including:
 
 - Efficiency per process
 - Capacity estimation based on minutaje
-- Pareto frequency accumulation
-- Capacity utilization across days
+- Pareto accumulation
+- Goal vs. actual variance metrics
 
-Each measure is structured and commented for clarity.
-
----
 ---
 
 ## Disclaimer
 
-All data has been **fully anonymized and simulated**. Client names, operator IDs, and process labels were replaced to protect confidentiality.  
+All data has been fully anonymized and simulated.  
+Client names, operator IDs, and process labels were replaced to protect confidentiality.  
 This project is for educational and professional portfolio use only.
 
 ---
@@ -107,3 +107,22 @@ This project is for educational and professional portfolio use only.
 🔗 [GitHub Profile](https://github.com/renzosan25)
 
 ---
+
+## Additional Example – Daily Control Dashboard
+
+As a complementary example, the following dashboard illustrates a simplified daily production control panel using flat structured data and no DAX or data modeling.
+
+🔗 [▶️ Daily Production Control Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzlkMmRhNGEtZWUwYy00MWNmLWE5YTItZGFiMjVlMmZlNTNlIiwidCI6IjdmMDBjMGNjLTE3NzgtNDBlOS1iMTAzLWU2N2Q1MGE0NWMwZSJ9)
+
+![Production Control](./screenshots/dashboard_control_salidas.png)
+
+Includes:
+- Daily production vs. target tracking
+- Output breakdown by client and status
+- Monthly distribution by client group
+- KPI gauges for progress and goal completion
+
+This report was built to visualize high-level metrics quickly, without applying relational modeling or advanced DAX logic.
+
+---
+
