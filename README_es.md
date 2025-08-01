@@ -10,7 +10,7 @@
 - [Lógica DAX](#lógica-dax)
 - [Aviso Legal](#aviso-legal)
 - [Autor](#autor)
-- [Ejemplo Adicional](#ejemplo-adicional---tablero-de-control-diario)
+- [Ejemplo Adicional](#ejemplo-adicional--tablero-de-control-diario)
 
 ---
 
