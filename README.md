@@ -110,7 +110,7 @@ This project is for educational and professional portfolio use only.
 
 ## Additional Example – Daily Control Dashboard
 
-As a complementary example, the following dashboard illustrates a simplified daily production control panel using flat structured data and no DAX or data modeling.
+As a complementary example, the following dashboard illustrates a simplified daily production control panel using flat structured data and simpler DAX logic.
 
 🔗 [▶️ Daily Production Control Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzlkMmRhNGEtZWUwYy00MWNmLWE5YTItZGFiMjVlMmZlNTNlIiwidCI6IjdmMDBjMGNjLTE3NzgtNDBlOS1iMTAzLWU2N2Q1MGE0NWMwZSJ9)
 
